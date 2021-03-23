@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상선택자</title>
+    <style media="screen">
+      p {
+        border: 10px red;
+      }
+
+      p::before {
+        color: red;
+        content: "이게 :before";
+      }
+
+      p::after {
+        color: blue;
+        content: "이건 :after";
+      }
+
+      p::first-line {
+        font-weight: 600;
+      }
+
+      p::first-letter {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      :root :before :after ... 이런게 CSS 요소였다니... 역시 배움에는 끝이 없다
+      😂
+    </p>
+  </body>
+</html>
